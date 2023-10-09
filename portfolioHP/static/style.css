@@ -1,0 +1,68 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the header and navigation */
+header {
+    background-color: #FFEBCD;
+    color: #191970;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #0000FF;
+}
+
+/* Style for sections */
+section {
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Style for project thumbnails */
+.project {
+    margin-bottom: 20px;
+}
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add more custom styles as needed */
+
+/* About Meセクションの見出し */
+#about h1 {
+    color: #0000FF; /* 任意の色に変更できます */
+}
+
+/* About Meセクションのテキスト */
+#about p {
+    color: #0000FF; /* 別の色に変更できます */
+}
+
+/* Portfolioセクションの見出し */
+#portfolio h1 {
+    color: #0000FF; /* 任意の色に変更できます */
+}
+
+/* Portfolioセクション内のプロジェクト名 */
+#portfolio .project p {
+    color: #0000FF; /* 別の色に変更できます */
+}
+
+#blog h1, #blog p {
+    color: #0000FF; /* 任意の色に変更できます */
+}
+/* Contactセクションの見出し */
+#contact h1 , #contact p {
+    color: #0000FF; /* 任意の色に変更できます */
+}

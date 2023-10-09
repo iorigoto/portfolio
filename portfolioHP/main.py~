@@ -1,0 +1,14 @@
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    # Pythonコードファイルを読み込む
+    with open("path/to/your/file.py", "r") as f:
+        python_code = f.read()
+    # HTMLにデータを渡す
+    return render_template("index.html", code=python_code)
+
+if __name__ == "__main__":
+    app.run()

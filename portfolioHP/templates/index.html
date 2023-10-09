@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+        /* Initially hide the code block */
+        #codeBlock {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleCode(id) {
+            var codeBlock = document.getElementById(id);
+            if (codeBlock.style.display === "none") {
+                codeBlock.style.display = "block";
+            } else {
+                codeBlock.style.display = "none";
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Bog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h1>About Me</h1>
+        <p>こんにちは、iori gotoと申します。プログラミングとデザインに情熱を持つエンジニアです。フリータイムでは数学とアートを学ぶことに情熱を注いでいます。また、現在は生成AIを活用した音楽プレイヤーの設計に取り組んでいます。</p>
+    </section>
+    
+    <section id="portfolio">
+        <h1>Portfolio</h1>
+        <!-- Add your project thumbnails and descriptions here -->
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <p>6次のwikipedia</p>
+	    <button onclick="toggleCode('codeBlock1')">コードを表示</button>
+
+<pre id="codeBlock1",style="display:none;"><code>
+        {{ code_dict['pyScrapingP131.py']}}
+</code></pre>
+
+
+        </div>
+        <div class="project">
+            <!--<img src="LSTM.pdf" alt="Project 2", width="300", height="200"> -->
+<embed src="static/LSTM.pdf#view=Fit" type="application/pdf" width="300" height="200">
+
+            <p>deeplearning framework</p>
+	    <button onclick="toggleCode('codeBlock2')">コードを表示</button>
+<pre id="codeBlock2",style="display:none;"><code>
+        {{ code_dict['step60.py']}}
+		<!-- ここにコードを挿入 -->
+		supreme!--2!!
+    </code></pre>
+        </div>
+    </section>
+
+    <section id="blog">
+      <h1>Blog</h1>
+      <p>blog place.</p>
+    </section>
+    <section id="contact">
+        <h1>Contact</h1>
+        <!-- Add a contact form or contact information here -->
+hippies_public0l@icloud.com
+    </section>
+</body>
+</html>
